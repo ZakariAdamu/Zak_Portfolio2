@@ -1,4 +1,5 @@
 /* Start global */
+@import url('https://fonts.googleapis.com/css2?family=Niconne&family=Poppins:wght@300;400&family=Teko:wght@300;400&display=swap');
 
 @font-face {
 	font-family: 'The Historia Demo';
@@ -259,9 +260,11 @@ li {
 }
 
 .landing-text h6 {
-	font-size: 2rem;
+	font-family: 'Niconne', cursive;
+	font-size: 3rem;
 	font-weight: 300;
 }
+
 /* End header */
 
 /* Start about */
@@ -289,16 +292,10 @@ li {
 
 .profile-img {
 	flex: 1;
-	/* margin-right: 5rem; */
 	margin: 0 5rem 5rem 0;
 }
-@media only screen and (max-width: 2000px) {
-	.profile-img {
-		flex: 1;
-		/* margin-right: 5rem; */
-		margin: 0 5rem 5rem 0;
-	}
-}
+
+/* @media only screen and (max-width: 2000px)  */
 
 .about-details {
 	flex: 1;
@@ -566,26 +563,6 @@ input[type='submit']:hover {
 .up i:hover {
 	cursor: pointer;
 }
-/* .footer {
-	width: 100%;
-	text-align: center;
-}
-.up {
-	position: relative;
-	width: 5rem;
-	height: 5rem;
-	background-color: #eee;
-	top: -2.5rem;
-	right: 5rem;
-	border-radius: 100%;
-	display: flex;
-}
-.up i {
-	color: #16162d;
-	color: #1ca123;
-	font-size: 2rem;
-	margin: auto;
-} */
 
 .scrollTop {
 	position: fixed;
@@ -725,11 +702,6 @@ footer a {
 		flex-direction: column;
 	}
 
-	.portfolio-img {
-		margin: 0 0 2rem 0;
-		order: 1;
-	}
-
 	.portfolio-description {
 		margin: 0;
 		order: 2;
@@ -749,6 +721,39 @@ footer a {
 	/* .up {
 		right: 2rem;
 	} */
+}
+@media screen and (min-width: 830px) {
+	.profile-img {
+		width: 2.5%;
+
+		margin-right: 20px;
+	}
+	.profile-img img {
+		max-width: fit-content;
+		border-radius: 50%;
+		border: 1px solid;
+	}
+}
+@media screen and (min-width: 960px) {
+	.about .container {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+	.profile-img {
+		margin: 0 auto;
+	}
+	.about-details {
+		margin: 0 auto;
+	}
+}
+@media screen and (min-width: 1020px) {
+	.profile-img {
+		margin: 0 5rem;
+	}
+	.about-details {
+		margin: 0 5rem;
+	}
 }
 
 /* ====================== [ Start Cursor Style ] ====================== */
