@@ -43,7 +43,7 @@ img {
 
 /* Start reusable */
 .container {
-	width: 90%;
+	width: 75%;
 	max-width: 120rem;
 	height: 100%;
 	margin: 0 auto;
@@ -92,6 +92,21 @@ section {
 .section-heading h6 {
 	font-size: 1.6rem;
 	font-weight: 300;
+}
+.scroll {
+	display: inline-block;
+	margin: 100px auto -10px;
+	width: 30px;
+	animation: move 1.5s infinite alternate;
+}
+
+@keyframes move {
+	0% {
+		transform: translateY(0px);
+	}
+	100% {
+		transform: translateY(20px);
+	}
 }
 
 .has-margin-right {
@@ -247,12 +262,15 @@ li {
 	padding: 1rem;
 	user-select: none;
 }
+.landing-text h2 {
+	/* font-family: 'Niconne', cursive; */
+}
 
 .section__title {
 	position: absolute;
 	margin-left: 5rem;
 	margin-bottom: 25rem;
-	margin-top: -7.3rem;
+	margin-top: -5.3rem;
 	font-weight: 300;
 	/* left: 0; */
 	/* color: green; */
@@ -422,10 +440,29 @@ li {
 }
 
 .portfolio-description .cta:hover {
-	color: #2f67cd;
+	color: #80a2e2;
+}
+.portfolio-img {
+	/* height: 300px; */
+	width: 400px;
+	margin: 10px auto;
+	border-radius: 10px;
+
+	overflow: hidden;
+	transition: all 2s ease;
+}
+.portfolio-img img {
+}
+.portfolio-img img {
+	transition: transform 650ms ease;
+}
+.portfolio-img:hover img {
+	transform: scale(1.1);
 }
 
-/* End services */
+/* .portfolio-item img {
+	border-radius: 10px;
+} */
 
 /* Start timeline */
 .timeline ul {
@@ -648,11 +685,11 @@ footer a {
 	}
 
 	.landing-text h1 {
-		font-size: 9em;
+		font-size: 7rem;
 	}
 
 	.landing-text h6 {
-		font-size: 1.5rem;
+		font-size: 2rem;
 	}
 
 	.about-heading h1 {
@@ -717,12 +754,24 @@ footer a {
 	form {
 		width: 100%;
 	}
-
-	/* .up {
-		right: 2rem;
-	} */
 }
 @media screen and (min-width: 830px) {
+	.landing-text h1 {
+		font-size: 9.5rem;
+	}
+	/* .section__title--intro {
+		margin-left: 9rem;
+	} */
+	.section__title {
+		/* position: absolute; */
+		margin-left: 16.5rem;
+		/* margin-bottom: 25rem; */
+		margin-top: -4.3rem;
+		font-weight: 300;
+		/* left: 0; */
+		/* color: green; */
+		font-size: 4rem;
+	}
 	.profile-img {
 		width: 2.5%;
 
@@ -734,7 +783,27 @@ footer a {
 		border: 1px solid;
 	}
 }
+@media screen and (min-width: 700px) {
+	.portfolio-description {
+		width: 400px;
+		margin: 0 auto;
+	}
+}
+@media screen and (min-width: 900px) {
+	.landing-text {
+		top: 55%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		width: 100%;
+		text-align: center;
+		/* z-index: 1; */
+	}
+}
+
 @media screen and (min-width: 960px) {
+	.landing-text h1 {
+		font-size: 12rem;
+	}
 	.about .container {
 		display: flex;
 		align-items: center;
@@ -753,6 +822,21 @@ footer a {
 	}
 	.about-details {
 		margin: 0 5rem;
+	}
+	.logo {
+		margin-left: 5rem;
+	}
+	.menu-toggler {
+		top: 3rem;
+		/* right: 2.5rem; */
+	}
+	.section__title {
+		margin-left: 19rem;
+	}
+}
+@media screen and (min-width: 1120px) {
+	.section__title {
+		margin-left: 27rem;
 	}
 }
 
