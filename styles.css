@@ -833,6 +833,30 @@ footer a {
 	.section__title {
 		margin-left: 19rem;
 	}
+
+	.hide-desktop {
+		display: none;
+	}
+	.top-nav {
+		width: 100%;
+		/* height: 15vh; */
+		position: relative;
+		z-index: 0;
+		background-color: inherit;
+		transition: all 650ms cubic-bezier(1, 0, 0, 1);
+		top: -30px;
+	}
+	.nav-list {
+		list-style: none;
+		width: 100%;
+		/* height: 20%; */
+		display: flex;
+		justify-content: flex-end;
+		flex-direction: row;
+	}
+	.nav-list .nav-link {
+		color: rgb(197, 184, 184);
+	}
 }
 @media screen and (min-width: 1120px) {
 	.section__title {
