@@ -33,6 +33,7 @@ a {
 p {
 	font-size: 1.8rem;
 	font-weight: 300;
+	line-height: 30px;
 }
 
 img {
@@ -754,6 +755,9 @@ footer a {
 	form {
 		width: 100%;
 	}
+	.mouse-cursor {
+		/* display: none; */
+	}
 }
 @media screen and (min-width: 830px) {
 	.landing-text h1 {
@@ -855,7 +859,7 @@ footer a {
 		flex-direction: row;
 	}
 	.nav-list .nav-link {
-		color: rgb(197, 184, 184);
+		color: #cccccc;
 	}
 }
 @media screen and (min-width: 1120px) {
