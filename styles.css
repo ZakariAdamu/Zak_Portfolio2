@@ -145,6 +145,7 @@ header {
 
 .top-nav {
 	width: 100%;
+	max-width: 1220px;
 	height: 45vh;
 	position: fixed;
 	z-index: 50;
@@ -262,6 +263,7 @@ li {
 	-webkit-text-fill-color: transparent;
 	padding: 1rem;
 	user-select: none;
+	letter-spacing: 1.5rem;
 }
 .landing-text h2 {
 	/* font-family: 'Niconne', cursive; */
